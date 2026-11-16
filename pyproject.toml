@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paviscan"
+version = "0.1.0"
+description = "Buracos em pavimento a partir de ortofotos: deteccao, medidas e dashboard"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "rasterio",
+    "affine>=3",
+    "pillow",
+    "shapely>=2",
+    "geopandas",
+    "pyproj",
+    "scikit-image",
+    "opencv-python-headless",
+    "scipy",
+    "pandas",
+    "pyyaml",
+    "openpyxl",
+    "fpdf2>=2.8",
+    "streamlit>=1.50",
+    "plotly",
+    "pydeck",
+    "folium",
+    "streamlit-folium",
+    "typer",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+paviscan = "paviscan.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["typer.Option", "typer.Argument"]
+
+[tool.ruff.lint.per-file-ignores]
+# o gabarito e bloqueado para edicao; a ordem de import dele ficou "errada" quando pipeline.py passou a existir
+"tests/golden/*" = ["I001"]
+# telas e relatorio tem textos longos de interface
+"src/paviscan/painel/app.py" = ["E501"]
+"src/paviscan/relatorio.py" = ["E501"]
+"src/paviscan/base_publica.py" = ["E501"]

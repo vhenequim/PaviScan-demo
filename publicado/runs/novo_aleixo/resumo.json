@@ -1,0 +1,52 @@
+{
+  "n_defeitos": 526,
+  "area_total_m2": 107.2828,
+  "area_pista_m2": 8311.866,
+  "pct_afetada": 1.2907,
+  "comprimento_pista_m": 1833.77,
+  "n_segmentos": 93,
+  "por_severidade": {
+    "baixa": 437,
+    "media": 71,
+    "alta": 18
+  },
+  "gsd_m": 0.017818,
+  "detector": "classico",
+  "versao": "0.6.1",
+  "limites_detector": "O detector compara cada ponto com o pavimento em volta, sem aprendizado. Procura duas coisas: anomalia escura (buraco) e cor de solo no meio do pavimento (revestimento perdido). Mancha de oleo, remendo escuro, tampa de bueiro, poca, sarjeta, sombra pequena e veiculo escuro aparecem como buraco; lama, areia e terra trazida por roda aparecem como revestimento perdido, assim como veiculo de cor quente e folha seca. O revestimento perdido e medido contra o pavimento inteiro que sobrou em volta (janela de 6 m): trecho que perdeu a capa na largura toda nao tem com o que comparar e pode sair como bom. Use a confianca minima e a revisao manual para separar os casos. Em via de terra so se procura anomalia escura (buraco, poca, sulco com sombra): nao ha revestimento para perder, e sombra de vegetacao na beira da via tambem aparece.",
+  "previa_limites": [
+    [
+      -3.057916142973009,
+      -59.97273097402633
+    ],
+    [
+      -3.0551471517261892,
+      -59.969663608403906
+    ]
+  ],
+  "src": "EPSG:31980",
+  "ortofoto": "orto.tif",
+  "largura_px": 19108,
+  "altura_px": 17148,
+  "cortadas_por_janela": 1,
+  "processado_em": "2026-11-13T11:12:29",
+  "fonte": {
+    "titulo": "Novo Aleixo",
+    "produtor": "Perito Paulo Rafael",
+    "licenca": "CC-BY-4.0",
+    "data": "2021-11-08",
+    "origem": "OpenAerialMap"
+  },
+  "custo_por_opcao": {
+    "A": 42377.72,
+    "B": 89571.1,
+    "C": 36262.2
+  },
+  "custo_plano": {
+    "direto": 78140.53,
+    "bdi": 19535.13,
+    "total": 97675.66
+  },
+  "bdi": 0.25,
+  "precos_placeholder": true
+}

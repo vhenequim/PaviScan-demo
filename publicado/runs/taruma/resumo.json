@@ -1,0 +1,52 @@
+{
+  "n_defeitos": 618,
+  "area_total_m2": 152.4253,
+  "area_pista_m2": 11976.118,
+  "pct_afetada": 1.2727,
+  "comprimento_pista_m": 2974.23,
+  "n_segmentos": 155,
+  "por_severidade": {
+    "baixa": 488,
+    "media": 112,
+    "alta": 18
+  },
+  "gsd_m": 0.029936,
+  "detector": "classico",
+  "versao": "0.6.1",
+  "limites_detector": "O detector compara cada ponto com o pavimento em volta, sem aprendizado. Procura duas coisas: anomalia escura (buraco) e cor de solo no meio do pavimento (revestimento perdido). Mancha de oleo, remendo escuro, tampa de bueiro, poca, sarjeta, sombra pequena e veiculo escuro aparecem como buraco; lama, areia e terra trazida por roda aparecem como revestimento perdido, assim como veiculo de cor quente e folha seca. O revestimento perdido e medido contra o pavimento inteiro que sobrou em volta (janela de 6 m): trecho que perdeu a capa na largura toda nao tem com o que comparar e pode sair como bom. Use a confianca minima e a revisao manual para separar os casos. Em via de terra so se procura anomalia escura (buraco, poca, sulco com sombra): nao ha revestimento para perder, e sombra de vegetacao na beira da via tambem aparece.",
+  "previa_limites": [
+    [
+      -3.006312247670082,
+      -60.04598295424624
+    ],
+    [
+      -3.0019926968020716,
+      -60.043106943975864
+    ]
+  ],
+  "src": "EPSG:31980",
+  "ortofoto": "orto.tif",
+  "largura_px": 10647,
+  "altura_px": 15942,
+  "cortadas_por_janela": 1,
+  "processado_em": "2026-11-13T11:11:53",
+  "fonte": {
+    "titulo": "Tarumã",
+    "produtor": "Perito Paulo Rafael",
+    "licenca": "CC-BY-4.0",
+    "data": "2021-11-08",
+    "origem": "OpenAerialMap"
+  },
+  "custo_por_opcao": {
+    "A": 54289.46,
+    "B": 114748.17,
+    "C": 106143.73
+  },
+  "custo_plano": {
+    "direto": 139058.9,
+    "bdi": 34764.72,
+    "total": 173823.62
+  },
+  "bdi": 0.25,
+  "precos_placeholder": true
+}

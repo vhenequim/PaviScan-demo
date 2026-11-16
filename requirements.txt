@@ -1,0 +1,21 @@
+# Gerado por scripts/publicar.py a partir do pyproject.toml
+numpy
+rasterio
+affine>=3
+pillow
+shapely>=2
+geopandas
+pyproj
+scikit-image
+opencv-python-headless
+scipy
+pandas
+pyyaml
+openpyxl
+fpdf2>=2.8
+streamlit>=1.50
+plotly
+pydeck
+folium
+streamlit-folium
+typer
